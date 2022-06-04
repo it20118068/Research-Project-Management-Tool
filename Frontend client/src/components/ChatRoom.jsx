@@ -56,10 +56,14 @@ function ChatRoom() {
 
 
   useEffect(() => {
-    socket.current = io("https://research-socket.herokuapp.com");
+    socket.current = io("ws://localhost:8900");
     socket.current.on("getMessage", (data) => {
+      console.log(data)
+      console.log(data)
+      getChat(localStorage.getItem("grpId"));
       getChat(localStorage.getItem("grpId"));
     });
+    
   }, []);
 
 
@@ -69,6 +73,7 @@ function ChatRoom() {
     let messages = await new Promise((resovle, reject)=>{
       GroupChatService.getChat(id)
       .then((res) => {
+        console.log(res.data.messages)
         resovle(res.data.messages);
       })
       .catch((err) => {
