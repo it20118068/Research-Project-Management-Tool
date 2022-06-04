@@ -1,0 +1,61 @@
+.my-bg {
+    /* background-color: #eeeeee8e; */
+    background-color: #ffffffef;
+    height: 76vh; 
+}
+
+.body-img {
+    background-image: url('../images/background.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh;
+}
+
+
+.custom-header {
+    color: rgb(255, 255, 255);
+    /* background-image: url("https://cdn.wallpapersafari.com/41/78/WEprBK.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  */
+    background-color: rgba(0, 1, 24, 0.986);
+    
+    /* border-radius: 10px; */
+}
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50px;
+    height: 250px;
+    width: 250px;
+  }
+
+
+  .user-profile-bg {
+    background-color: rgba(0, 1, 24, 0.986);
+    color: rgb(255, 255, 255);
+  }
+
+
+  .title-bg {
+    /* background-image: url("https://cdn.wallpapersafari.com/41/78/WEprBK.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  */
+    
+    background-color: rgba(0, 1, 24, 0.986);
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 1, 24, 0.986);
+    text-align: center;
+    color: white;
+  }
